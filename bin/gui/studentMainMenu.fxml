@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="inside" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #2a0845;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.studentMainMenuController">
+   <children>
+      <AnchorPane layoutX="220.0" layoutY="124.0" prefHeight="368.0" prefWidth="749.0" style="-fx-background-color: grey;">
+         <children>
+            <AnchorPane onMouseClicked="#newQuizzes" prefHeight="226.0" prefWidth="420.0" style="-fx-background-color: #FC5C7D;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="164.0" layoutX="138.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/png/007-quiz-1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="110.0" fitWidth="70.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/png/006-new.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Quizzes" wrappingWidth="115.69189453125">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="420.0" onMouseClicked="#ClassroomPage" prefHeight="226.0" prefWidth="420.0" style="-fx-background-color: #6A82FB;">
+               <children>
+                  <ImageView fitHeight="164.0" fitWidth="186.0" layoutX="128.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/png/011-classroom.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classroom">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutY="226.0" onMouseClicked="#GradesPage" prefHeight="226.0" prefWidth="420.0" style="-fx-background-color: #a17fe0;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="136.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="164.0" fitWidth="218.0" layoutX="128.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/png/008-grade.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grades">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="420.0" layoutY="226.0" onMouseClicked="#oldQuizzesPage" prefHeight="226.0" prefWidth="420.0" style="-fx-background-color: #40E0D0;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="135.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/png/010-grade-1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Quizzes">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="59.0" fitWidth="133.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/mainLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="50.0" layoutX="1023.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/png/002-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logout" fitHeight="33.0" fitWidth="33.0" layoutX="1186.0" layoutY="22.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/png/005-logout-1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="1232.0" layoutY="19.0" onMouseClicked="#closePage" prefHeight="37.0" prefWidth="16.0" text="X" textFill="#14c066">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Text fx:id="username" fill="#14c066" layoutX="1071.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

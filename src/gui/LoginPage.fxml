@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="inside" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to left, #6441a5, #2a0845);" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <AnchorPane layoutX="700.0" layoutY="135.0" prefHeight="430.0" prefWidth="389.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#27e47f" layoutX="150.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enteredEmail" layoutX="86.0" layoutY="215.0" prefHeight="31.0" prefWidth="217.0" promptText="Email" />
+            <PasswordField fx:id="enteredPassword" layoutX="86.0" layoutY="269.0" prefHeight="31.0" prefWidth="217.0" promptText="Password" />
+            <Button layoutX="121.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#login" opacity="0.74" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: rgb(20,192,102);" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="126.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/teacher.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="247.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/university.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="50.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="41.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/padlock.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="teacherCheck" layoutX="102.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Teacher">
+               <toggleGroup>
+                  <ToggleGroup fx:id="type" />
+               </toggleGroup>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="studentCheck" layoutX="223.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Student" toggleGroup="$type">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></RadioButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="147.0" layoutY="135.0" prefHeight="430.0" prefWidth="458.0" stylesheets="@application.css">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="241.0" layoutX="121.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/mainLogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#2de181" layoutX="121.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to quizhub!" wrappingWidth="299.6708984375">
+               <font>
+                  <Font name="Segoe UI" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="#14c066" layoutX="137.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Haven't you registered?">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#14c066" layoutX="148.0" layoutY="282.0" onMouseClicked="#teacherSignUpPage" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for a teacher." underline="true">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="signUpStudentext" fill="#14c066" layoutX="147.0" layoutY="331.0" onMouseClicked="#studentSignUpPage" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for a student." underline="true">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label fx:id="exitLabel" layoutX="1232.0" layoutY="19.0" onMouseClicked="#closePage" prefHeight="37.0" prefWidth="16.0" text="X" textFill="#14c066">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

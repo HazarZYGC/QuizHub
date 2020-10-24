@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="inside" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to left, #6441a5, #2a0845);" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.studentGradesController">
+   <children>
+      <Label fx:id="exitLabel" layoutX="1232.0" layoutY="19.0" onMouseClicked="#closePage" prefHeight="37.0" prefWidth="16.0" text="X" textFill="#14c066">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="logoutImage" fitHeight="33.0" fitWidth="33.0" layoutX="1186.0" layoutY="22.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/png/005-logout-1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="backLabel" fitHeight="53.0" fitWidth="51.0" layoutX="55.0" layoutY="607.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/png/004-back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="133.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/mainLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="50.0" layoutX="1023.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/png/002-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ScrollPane fitToWidth="true" layoutX="272.0" layoutY="148.0" prefHeight="273.0" prefWidth="770.0" style="-fx-background-color: white;">
+         <content>
+            <ListView fx:id="quizzes" prefHeight="273.0" prefWidth="770.0" />
+         </content>
+      </ScrollPane>
+      <Text fx:id="username" fill="#14c066" layoutX="1071.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

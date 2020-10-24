@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to top, #6441a5, #2a0845);" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterPageController">
+   <children>
+      <AnchorPane id="inside" fx:id="anchor" layoutX="230.0" layoutY="108.0" prefHeight="484.0" prefWidth="820.0" style="-fx-background-color: rgba(255,255,255, 0.85);" stylesheets="@application.css" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <TextField fx:id="firstName" layoutX="104.0" layoutY="89.0" promptText="First Name" AnchorPane.leftAnchor="104.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="email" layoutX="104.0" layoutY="203.0" promptText="Email" AnchorPane.leftAnchor="104.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></TextField>
+            <DatePicker fx:id="birthdate" layoutX="104.0" layoutY="151.0" prefHeight="31.0" prefWidth="187.0" promptText="Birthdate" AnchorPane.leftAnchor="104.0" />
+            <TextField fx:id="username" layoutX="531.0" layoutY="203.0" promptText="Username" AnchorPane.rightAnchor="102.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="lastName" alignment="TOP_LEFT" layoutX="531.0" layoutY="89.0" prefHeight="31.0" prefWidth="187.0" promptText="Last Name" AnchorPane.rightAnchor="102.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="104.0" layoutY="258.0" promptText="Password" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="258.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></PasswordField>
+            <PasswordField fx:id="passwordAgain" layoutX="531.0" layoutY="258.0" promptText="Re-Password" AnchorPane.rightAnchor="102.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font></PasswordField>
+            <ComboBox fx:id="comboBox" layoutX="531.0" layoutY="151.0" opacity="0.74" prefHeight="31.0" prefWidth="187.0" promptText="Gender" style="-fx-background-color: #AAAAAA;" visibleRowCount="3" AnchorPane.rightAnchor="102.0" />
+            <Text fill="#4e3286" layoutX="211.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE YOUR STUDENT ACCOUNT" wrappingWidth="398.9999966993928" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="31.083984375">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Text>
+            <Button fx:id="signUp" layoutX="332.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#signUp" opacity="0.75" prefHeight="37.0" prefWidth="157.0" style="-fx-background-color: rgb(20,192,102);" text="Sign Up" textFill="WHITE" textOverrun="CLIP" AnchorPane.leftAnchor="332.0" AnchorPane.topAnchor="328.0">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+            <Text fill="#4e3286" layoutX="312.0" layoutY="401.0" onMouseClicked="#backLoginPage" strokeType="OUTSIDE" strokeWidth="0.0" text="You have already an account?" underline="true" AnchorPane.bottomAnchor="79.2353515625" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="311.61572265625" AnchorPane.topAnchor="384.8134765625">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fill="#4e3286" layoutX="346.0" layoutY="429.0" onMouseClicked="#teacherSignUpPage" strokeType="OUTSIDE" strokeWidth="0.0" text="You are a teacher?" underline="true" AnchorPane.bottomAnchor="51.8212890625" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="346.412109375" AnchorPane.topAnchor="415.4208984375">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+      <Label fx:id="cikis" layoutX="1232.0" layoutY="19.0" onMouseClicked="#closePage" prefHeight="37.0" prefWidth="16.0" text="X" textFill="#60bf84de">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="59.0" fitWidth="133.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/mainLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
